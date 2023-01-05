@@ -69,3 +69,22 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.text-plane {
+  display: inline-block;
+
+  /* apply negative margins and padding to avoid chars from being cropped */
+  margin: -1em;
+  padding: 1em;
+
+  /* hide the original text content */
+  opacity: 0;
+}
